@@ -9,6 +9,8 @@ Bonus feature: Perform multiple Search and Replace operations
 
 [Docsfox Documentation](docs/Docsfox.md)
 
+[How Docsfox Works](docs/How%20Docsfox%20Works.md)
+
 ## What is document assembly software?
 
 Document assembly or document automation software:
@@ -64,6 +66,8 @@ Docsfox - плагіни Python для LibreOffice Writer та Notepad++
 Додаткова функція: Виконання кількох операцій пошуку та заміни
 
 [Документація Docsfox](docs/Docsfox.md)
+
+[Як працює Docsfox](docs/How%20Docsfox%20Works.md)
 
 ## Що таке програмне забезпечення для складання документів?
 
