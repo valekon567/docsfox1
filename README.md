@@ -121,7 +121,7 @@ MatterDescription,Buy-sell agreements for Heron Unlimited,V,,
 Option1,,TF,T,Include thank you
 OptionFileNo,,TF,T,Include file number
 OurFileNo,H-240288,V,,
-DateOfDocument,May 30 2025,V,,
+DateOfDocument,May 30, 2025,V,,
 ```
 
 **Generated Document:**
@@ -171,15 +171,15 @@ Docsfox - плагіни Python для LibreOffice Writer та Notepad++
 
 Docsfox - це ефективна, безкоштовна програма з відкритим кодом для складання документів.
 
- Docsfox:
+Docsfox:
 - Безкоштовний для комерційного та особистого використання
 - Має короткий час навчання
 - Встановлюється на Microsoft Windows
 - Працює з різноманітним програмним забезпеченням для обробки текстів
 - Сумісний з:
-- MS Word, MS 365, Outlook
-- LibreOffice Writer, Notepad++
-- Google Docs, Gmail та іншими
+  - MS Word, MS 365, Outlook
+  - LibreOffice Writer, Notepad++
+  - Google Docs, Gmail та іншими
 - Працює з .DOCX, .TXT, .ODT, .HTML, .MD, .CSV та іншими.
 
 ## Які ризики зменшує Docsfox?
