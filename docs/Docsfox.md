@@ -15,7 +15,90 @@ In contrast, online document assembly services raise concerns about the privacy 
 
 **Easy:** Learning and using Docsfox are quick and easy. Create and reuse templates from existing documents as needed, undeterred by the prospect of grappling with complexity.
 
-**How Docsfox works:** Watch [our Docsfox video] and check out [our screenshots].
+## How Docsfox Works
+
+Docsfox automates document creation through a simple three-step process:
+
+### Step 1: Create a Template
+
+Start with any existing document (contract, letter, form, etc.) and convert it into a reusable template:
+
+1. **Insert Variables** - Replace specific information with placeholders using double angle brackets:
+   - Example: `Pat Secada` becomes `<<ClientFirst>> <<ClientLast>>`
+   - Variables can be names, addresses, dates, or any custom text
+   - Format: `<<VariableName>>`
+
+2. **Add Optional Text** - Mark text that may or may not be included:
+   - Example: `<<Option1>>NOT <<Option1/>>` to optionally include the word "NOT"
+   - Useful for clauses that apply only in certain situations
+   - Format: `<<TagName>>optional text<<TagName/>>`
+
+3. **Save the Template** - Save as .DOCX, .TXT, .ODT, or other supported formats
+
+### Step 2: Create a Data File
+
+Create a CSV spreadsheet with the information to fill into your template:
+
+1. **Column A (VARIABLE)** - The variable name from your template (without << >>)
+2. **Column B (TEXT)** - The actual text to insert
+3. **Column C (Type)** - Variable type:
+   - `V` for standard variables
+   - `TF` for optional text (True/False)
+   - `R` for search-and-replace operations
+4. **Column D (Value)** - For optional text: `T` to include, `F` to exclude
+5. **Column E (Description)** - Notes for your reference
+
+You can create one data file per client and reuse it for multiple documents.
+
+### Step 3: Generate the Document
+
+1. **Open your template** in LibreOffice Writer or Notepad++
+2. **Run the Docsfox plugin** (Tools menu or macro)
+3. **Select your CSV data file** when prompted
+4. **Docsfox automatically**:
+   - Replaces all variables with your specific text
+   - Includes or excludes optional text based on your T/F settings
+   - Performs any search-and-replace operations
+5. **Review and save** your customized document
+
+### Example Workflow
+
+**Template (Letter FORM.docx):**
+```
+<<DateOfDocument>>
+
+Dear <<ClientMrMs>> <<ClientLast>>,
+
+<<Option1>>Thank you for your recent inquiry. <<Option1/>>
+We are writing regarding <<MatterDescription>>.
+
+<<OptionFileNo>>Our file number: <<OurFileNo>><<OptionFileNo/>>
+```
+
+**Data File (Client DATA.csv):**
+```
+ClientMrMs,Mr.,V,,
+ClientLast,Heron,V,,
+MatterDescription,Buy-sell agreements for Heron Unlimited,V,,
+Option1,,TF,T,Include thank you
+OptionFileNo,,TF,T,Include file number
+OurFileNo,H-240288,V,,
+DateOfDocument,May 30, 2025,V,,
+```
+
+**Generated Document:**
+```
+May 30, 2025
+
+Dear Mr. Heron,
+
+Thank you for your recent inquiry.
+We are writing regarding Buy-sell agreements for Heron Unlimited.
+
+Our file number: H-240288
+```
+
+This process eliminates manual search-and-replace, prevents errors from forgotten placeholders, and saves hours of repetitive work.
 ## Alternatives
 ### Search and replace
 
