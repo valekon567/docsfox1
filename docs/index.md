@@ -2,6 +2,8 @@
 
 [Docsfox Documentation](Docsfox.md)
 
+[How Docsfox Works](How%20Docsfox%20Works.md)
+
 ## Brief description of Docsfox
 
 Docsfox - a Notepad++ Python plugin - Document assembly software - create and use template documents

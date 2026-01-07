@@ -15,7 +15,7 @@ In contrast, online document assembly services raise concerns about the privacy 
 
 **Easy:** Learning and using Docsfox are quick and easy. Create and reuse templates from existing documents as needed, undeterred by the prospect of grappling with complexity.
 
-**How Docsfox works:** Watch [our Docsfox video] and check out [our screenshots].
+**How Docsfox works:** See the detailed [How Docsfox Works](How%20Docsfox%20Works.md) guide for a complete step-by-step explanation of the workflow and technical implementation.
 ## Alternatives
 ### Search and replace
 
