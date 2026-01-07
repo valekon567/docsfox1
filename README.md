@@ -262,7 +262,7 @@ MatterDescription,Договори купівлі-продажу для Heron Un
 Option1,,TF,T,Включити подяку
 OptionFileNo,,TF,T,Включити номер справи
 OurFileNo,H-240288,V,,
-DateOfDocument,30 травня 2025,V,,
+DateOfDocument,30 травня, 2025,V,,
 ```
 
 **Згенерований документ:**
